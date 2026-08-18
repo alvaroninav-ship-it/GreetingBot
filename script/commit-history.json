@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-08-18T14:16:04.000Z",
+      "message": "Multiplicador",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject-logfiles/commit/HEAD"
+    },
+    "stats": {
+      "total": 6382,
+      "additions": 3001,
+      "deletions": 3381,
+      "date": "2026-08-18"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
