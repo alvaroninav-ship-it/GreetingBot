@@ -6,8 +6,9 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const name = document.getElementById('nombre').value;
+    const gender = document.getElementById('genero').value;
 
-    const greetingMessage = Greet(name);
+    const greetingMessage = Greet(name, gender);
 
     resultadoDiv.textContent = greetingMessage;
 });

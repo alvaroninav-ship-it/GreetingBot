@@ -1,12 +1,12 @@
-function Greet(name) {
+function Greet(name,gender) {
     const hora = new Date().getHours();
 
     if (hora < 12) {
-        return `Buenos días, ${name}`;
+        return `Buenos días ,${gender} ${name}`;
     } else if (hora < 18) {
-        return `Buenas tardes, ${name}`;
+        return `Buenas tardes, ${gender} ${name}`;
     } else {
-        return `Buenas noches, ${name}`;
+        return `Buenas noches, ${gender} ${name}`;
     }
 }
 
