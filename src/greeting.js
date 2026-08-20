@@ -1,13 +1,22 @@
-function Greet(name,gender) {
+function Greet(name,sexo,edad) {
     const hora = new Date().getHours();
-
+    let message='';
     if (hora < 12) {
-        return `Buenos días ,${gender} ${name}`;
+        message+= `Buenos días, `;
     } else if (hora < 18) {
-        return `Buenas tardes, ${gender} ${name}`;
+        message+= `Buenas tardes,  `;
     } else {
-        return `Buenas noches, ${gender} ${name}`;
+        message+= `Buenas noches,  `;
     }
+    if (edad >= 18) {
+        if (sexo === 'masculino') {
+            message += ' Sr. ';
+        } else if (sexo === 'femenino') {
+            message += ' Sra. ';
+        }
+    }
+    message+= name + '!';
+    return message;
 }
 
 export default Greet;

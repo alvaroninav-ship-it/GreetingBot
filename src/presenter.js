@@ -6,9 +6,10 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const name = document.getElementById('nombre').value;
-    const gender = document.getElementById('genero').value;
+    const gender = document.getElementById('sexo').value;
+    const age = parseInt(document.getElementById('edad').value);
 
-    const greetingMessage = Greet(name, gender);
+    const greetingMessage = Greet(name, gender, age);
 
     resultadoDiv.textContent = greetingMessage;
 });

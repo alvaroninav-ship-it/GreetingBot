@@ -11,9 +11,8 @@
     "url": "git+https://github.com/alvaroninav-ship-it/Iniciando_Software.git"
   },
   "license": "ISC",
-  "author": "Israel Antezana R.",
+  "author": "Alvaro Nina",
   "type": "module",
-  "main": "cypress.config.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
