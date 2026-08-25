@@ -13,16 +13,20 @@ idioma.addEventListener('change', () => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const name = document.getElementById('nombre').value;
+    let name = document.getElementById('nombre').value;
     const gender = document.getElementById('sexo').value;
     const age = parseInt(document.getElementById('edad').value);
+    if (!age || age < 0 || age > 120) {
+        resultadoDiv.textContent = 'Por favor, ingrese una edad válida (0-120).';
+    }
 
-    const greetingMessage = Greet(
+    else{
+        const greetingMessage = Greet(
         name,
         gender,
         age,
         idioma.value
     );
-
-    resultadoDiv.textContent = greetingMessage;
+        resultadoDiv.textContent = greetingMessage;
+    }
 });

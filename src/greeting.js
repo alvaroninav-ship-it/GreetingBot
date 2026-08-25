@@ -3,6 +3,9 @@ function Greet(name, sexo, edad, idioma) {
     let message = '';
 
     if (idioma === 'es') {
+        if (name==''){
+            name='visitante';
+        }
         if (hora < 12) {
             message = 'Buenos días, ';
         } else if (hora < 18) {
@@ -10,7 +13,6 @@ function Greet(name, sexo, edad, idioma) {
         } else {
             message = 'Buenas noches, ';
         }
-
         if (edad >= 18) {
             if (sexo === 'masculino') {
                 message += 'Sr. ';
@@ -19,6 +21,9 @@ function Greet(name, sexo, edad, idioma) {
             }
         }
     } else if (idioma === 'en') {
+        if (name==''){
+            name='visitor';
+        }
         if (hora < 12) {
             message = 'Good morning, ';
         } else if (hora < 18) {
